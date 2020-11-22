@@ -115,9 +115,6 @@ def read_markdown(parser, path):
              for (i, line) in enumerate(body.split('\n'))]
 
     # Parse Markdown.
-    p = Popen(['ruby', '-v'], stdin=PIPE, stdout=PIPE,
-              close_fds=True, universal_newlines=True, encoding='utf-8')
-    print(p.communicate()[0])
     p = Popen(['ruby', parser], stdin=PIPE, stdout=PIPE,
               close_fds=True, universal_newlines=True, encoding='utf-8')
     stdout_data, stderr_data = p.communicate(body)

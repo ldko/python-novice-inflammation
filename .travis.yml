@@ -24,6 +24,7 @@ before_install:
   - sudo apt-get install -y python3-pip
   - python3 -m pip install --upgrade pip setuptools wheel
   - python3 -m pip install pyyaml
+  - rvm --default use 2.7.1
 
 script:
   - make lesson-check
