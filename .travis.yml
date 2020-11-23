@@ -25,6 +25,9 @@ before_install:
   - python3 -m pip install --upgrade pip setuptools wheel
   - python3 -m pip install pyyaml
 
+before_script:
+  - echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
+
 script:
   - make lesson-check
   - make lesson-check-all
