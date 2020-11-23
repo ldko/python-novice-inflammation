@@ -2,7 +2,6 @@
 
 # Use Kramdown parser to produce AST for Markdown document.
 
-require "bundler/setup"
 require "kramdown"
 require "json"
 
