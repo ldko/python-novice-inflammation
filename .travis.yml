@@ -26,7 +26,7 @@ before_install:
   - python3 -m pip install pyyaml
 
 before_script:
-  - echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"' >> ~/.bashrc
+  - echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile
 
 script:
   - make lesson-check
